@@ -1,0 +1,126 @@
+.module-video-item-live-stream {
+    position: relative;
+    height: 96px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:not(.skeleton):before,
+    &:not(.skeleton):after {
+        content: "";
+        display: block;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &:before {
+        background-color: #f7d00e;
+        width: 75%;
+        left: 0;
+    }
+
+    &:after {
+        background-color: #26324d;
+        width: 25%;
+        right: 0;
+    }
+
+    .cover {
+        position: relative;
+        aspect-ratio: calc(175 / 92);
+        background-color: #EBEBEB;
+
+        .bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+
+        .placeholder {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+    }
+
+    .content {
+        box-sizing: border-box;
+
+        .competition {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .versus {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .module-video-item-live-stream {
+        height: 78px;
+        padding-right: 8px;
+
+        .cover {
+            aspect-ratio: calc(155 / 92);
+
+            .placeholder {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        .content {
+            .competition {
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            .versus {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .module-video-item-live-stream {
+        height: 78px;
+        padding-right: 8px;
+
+        .cover {
+            aspect-ratio: calc(115 / 92);
+        }
+
+        .content {
+            .competition {
+                font-size: 10px;
+                line-height: 12px;
+            }
+
+            .versus {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}

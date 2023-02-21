@@ -1,0 +1,93 @@
+.scroller {
+  position: relative;
+  overflow: hidden;
+}
+.scroller.direction-y {
+  display: flex;
+  max-height: 100%;
+}
+.direction-x.scroller > .controller {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.direction-y.scroller > .controller {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  flex-grow: 1;
+}
+
+.scroll-active.scroller > .controller .inner {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.direction-x.scroller > .controller .inner {
+  display: inline-flex;
+}
+:not(.is-mobile).has-scrollbar.direction-x.scroller > .controller .inner {
+  padding-bottom: 16px;
+}
+
+.direction-y.scroller > .controller .inner {
+  flex-grow: 1;
+}
+:not(.is-mobile).has-scrollbar.direction-y.scroller > .controller .inner {
+  padding-right: 16px;
+}
+
+.scroller .scrollbar {
+  position: absolute;
+}
+.scroller .scrollbar > .track {
+  position: relative;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+}
+.scroller .scrollbar .bar {
+  position: absolute;
+  background-color: #bec2ca;
+  border-radius: 999px;
+}
+.scroll-active.scroller .scrollbar .bar, .scroller .scrollbar .bar:hover {
+  background-color: #9399a6;
+}
+
+.direction-x.scroller .scrollbar {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+}
+.direction-x.scroller .scrollbar .bar {
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.direction-y.scroller .scrollbar {
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+}
+.direction-y.scroller .scrollbar .bar {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scroller .blocker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

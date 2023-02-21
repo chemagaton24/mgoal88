@@ -1,0 +1,41 @@
+@mixin styles($viewport: null) {
+    $mq: null;
+    @if $viewport != null {
+        $mq: 'mq-'+#{$viewport+'-'};
+    }
+
+    .#{$mq}ta-left {
+        text-align: left;
+    }
+    
+    .#{$mq}ta-right {
+        text-align: right;
+    }
+    
+    .#{$mq}ta-center {
+        text-align: center;
+    }
+    
+    .#{$mq}va-top {
+        vertical-align: top;
+    }
+    
+    .#{$mq}va-bottom {
+        vertical-align: bottom;
+    }
+    
+    .#{$mq}va-middle {
+        vertical-align: middle;
+    }
+}
+
+@mixin iterateViewport($viewport) {
+    @media only screen and (max-width: #{$viewport+'px'}) {
+        @include styles($viewport);
+    }
+}
+
+@include styles();
+@include iterateViewport(1400);
+@include iterateViewport(1023);
+@include iterateViewport(767);

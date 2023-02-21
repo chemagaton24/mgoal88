@@ -1,0 +1,36 @@
+.module-bottom-content-excerpt {
+    max-width: 330px;
+
+    .cover {
+        aspect-ratio: calc(330 / 198);
+    }
+
+    .title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .content {
+        .content-inline {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .module-bottom-content-excerpt {
+        max-width: unset;
+
+        .cover {
+            width: 96px;
+            height: 104px;
+        }
+    }
+}

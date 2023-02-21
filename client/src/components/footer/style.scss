@@ -1,0 +1,97 @@
+footer {
+    &.footer {
+        color: #9399a6;
+
+        a {
+            color: #9399a6;
+        }
+
+        >.row-1 {
+            background-color: #222939;
+            padding: 16px 0 24px;
+        }
+
+        >.row-2 {
+            background-color: #39445c;
+            padding: 12px 0;
+        }
+
+        .available-payments {
+            font-size: 10px;
+
+            .logo {
+                height: 16px;
+            }
+        }
+
+        .navbar {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0 -5px;
+
+            li {
+                position: relative;
+                padding: 0 5px;
+
+                &:not(:last-child):after {
+                    content: "|";
+                    position: absolute;
+                    right: -1px;
+                    top: 0;
+                }
+            }
+
+            a {
+                font-weight: 700;
+            }
+        }
+
+        .game-providers {
+            img {
+                height: 40px;
+            }
+        }
+
+        .copyright {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    footer {
+        &.footer {
+            .navbar {
+                font-size: 10px;
+                line-height: 14px;
+                margin: 0 -3px;
+
+                li {
+                    padding: 0 3px;
+                }
+            }
+
+            .copyright {
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        &.footer {
+            >.row-1 {
+                padding: 16px 0;
+            }
+
+            .game-providers {
+                img {
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

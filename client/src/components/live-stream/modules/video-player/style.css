@@ -1,0 +1,8 @@
+.module-video-player-live-stream .video-player-n-board {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.module-video-player-live-stream .video-player-iframe {
+  aspect-ratio: 1.7789473684;
+  background-color: #000000;
+}

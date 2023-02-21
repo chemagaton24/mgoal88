@@ -1,0 +1,9 @@
+section.section-padded {
+  padding: 48px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  section.section-padded {
+    padding: 32px 0;
+  }
+}

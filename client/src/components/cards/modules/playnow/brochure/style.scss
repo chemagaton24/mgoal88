@@ -1,0 +1,61 @@
+.module-brochures-playnow {
+    height: 120px;
+    padding: 0 22px 0 178px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    border-radius: 8px;
+    background-color: #151d2d;
+    color: #fff;
+
+    .logo-img {
+        max-height: 40px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    .module-brochures-playnow {
+        height: 96px;
+        padding: 0 22px 0 140px;
+
+        &.provider-m-sports {
+            padding: 0 8px 0 140px;
+        }
+
+        &.provider-saba-sports {
+            padding: 0 8px 0 118px;
+        }
+
+        .logo-img {
+            max-height: 32px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .module-brochures-playnow {
+        height: 80px;
+        padding: 0 8px 0 112px;
+
+        .logo-img {
+            max-height: 24px;
+        }
+
+        .tagline {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

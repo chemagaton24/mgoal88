@@ -1,0 +1,48 @@
+header {
+    &.header {
+        >.row-1 {
+            padding: 12px 0;
+            background-color: #222939;
+        }
+
+        >.row-2 {
+            padding: 12px 0;
+            background-color: #000000;
+        }
+
+        .main-logo {
+            height: 40px;
+        }
+
+        .navbar {
+            white-space: nowrap;
+
+            a {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &.active {
+                    color: #f7d00e;
+                }
+            }
+        }
+
+        .livechat {
+            color: #f7d00e;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    header {
+        &.header {
+            .main-logo {
+                height: 32px;
+            }
+        }
+    }
+}

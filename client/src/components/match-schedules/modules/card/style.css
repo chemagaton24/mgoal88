@@ -1,0 +1,21 @@
+.module-card-match-schedules {
+  width: 240px;
+  height: 120px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px #afafaf;
+  background-image: url("./images/soccer-vector-dark.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  background-color: #fff;
+}
+.module-card-match-schedules .league {
+  font-size: 10px;
+  font-weight: 700;
+}
+.module-card-match-schedules .team {
+  font-weight: 700;
+  font-size: 14px;
+}

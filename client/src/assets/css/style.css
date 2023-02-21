@@ -1,0 +1,2562 @@
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #151D2D;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.inner-box {
+  max-width: 1368px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.color-scheme-light {
+  color: #fff;
+}
+.color-scheme-light a {
+  color: #fff;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+iframe {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+ul.clean,
+ol.clean {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+a {
+  color: #26324d;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.flex > * {
+  min-width: 0;
+}
+
+.flex.flex-inline {
+  display: inline-flex;
+}
+.flex.flex-unset {
+  display: unset;
+}
+.flex.flex-direction-col {
+  flex-direction: column;
+}
+.flex.flex-direction-row {
+  flex-direction: row;
+}
+.flex.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex.flex-col-expand > * {
+  width: 100%;
+}
+.flex.flex-ai-s {
+  align-items: flex-start;
+}
+.flex.flex-ai-c {
+  align-items: center;
+}
+.flex.flex-ac-c {
+  align-content: center;
+}
+.flex.flex-jc-c {
+  justify-content: center;
+}
+.flex.flex-jc-s {
+  justify-content: flex-start;
+}
+.flex.flex-jc-e {
+  justify-content: flex-end;
+}
+.flex.flex-jc-b {
+  justify-content: space-between;
+}
+.flex > *.flex-shrink {
+  flex-shrink: 1;
+}
+.flex > *.flex-grow {
+  flex-grow: 1;
+}
+.flex > *.flex-min-width-unset {
+  min-width: unset;
+}
+.flex > *.flex-min-width-auto {
+  min-width: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flex.mq-1400-flex-inline {
+    display: inline-flex;
+  }
+  .flex.mq-1400-flex-unset {
+    display: unset;
+  }
+  .flex.mq-1400-flex-direction-col {
+    flex-direction: column;
+  }
+  .flex.mq-1400-flex-direction-row {
+    flex-direction: row;
+  }
+  .flex.mq-1400-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex.mq-1400-flex-col-expand > * {
+    width: 100%;
+  }
+  .flex.mq-1400-flex-ai-s {
+    align-items: flex-start;
+  }
+  .flex.mq-1400-flex-ai-c {
+    align-items: center;
+  }
+  .flex.mq-1400-flex-ac-c {
+    align-content: center;
+  }
+  .flex.mq-1400-flex-jc-c {
+    justify-content: center;
+  }
+  .flex.mq-1400-flex-jc-s {
+    justify-content: flex-start;
+  }
+  .flex.mq-1400-flex-jc-e {
+    justify-content: flex-end;
+  }
+  .flex.mq-1400-flex-jc-b {
+    justify-content: space-between;
+  }
+  .flex > *.mq-1400-flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex > *.mq-1400-flex-grow {
+    flex-grow: 1;
+  }
+  .flex > *.mq-1400-flex-min-width-unset {
+    min-width: unset;
+  }
+  .flex > *.mq-1400-flex-min-width-auto {
+    min-width: auto;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .flex.mq-1023-flex-inline {
+    display: inline-flex;
+  }
+  .flex.mq-1023-flex-unset {
+    display: unset;
+  }
+  .flex.mq-1023-flex-direction-col {
+    flex-direction: column;
+  }
+  .flex.mq-1023-flex-direction-row {
+    flex-direction: row;
+  }
+  .flex.mq-1023-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex.mq-1023-flex-col-expand > * {
+    width: 100%;
+  }
+  .flex.mq-1023-flex-ai-s {
+    align-items: flex-start;
+  }
+  .flex.mq-1023-flex-ai-c {
+    align-items: center;
+  }
+  .flex.mq-1023-flex-ac-c {
+    align-content: center;
+  }
+  .flex.mq-1023-flex-jc-c {
+    justify-content: center;
+  }
+  .flex.mq-1023-flex-jc-s {
+    justify-content: flex-start;
+  }
+  .flex.mq-1023-flex-jc-e {
+    justify-content: flex-end;
+  }
+  .flex.mq-1023-flex-jc-b {
+    justify-content: space-between;
+  }
+  .flex > *.mq-1023-flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex > *.mq-1023-flex-grow {
+    flex-grow: 1;
+  }
+  .flex > *.mq-1023-flex-min-width-unset {
+    min-width: unset;
+  }
+  .flex > *.mq-1023-flex-min-width-auto {
+    min-width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .flex.mq-767-flex-inline {
+    display: inline-flex;
+  }
+  .flex.mq-767-flex-unset {
+    display: unset;
+  }
+  .flex.mq-767-flex-direction-col {
+    flex-direction: column;
+  }
+  .flex.mq-767-flex-direction-row {
+    flex-direction: row;
+  }
+  .flex.mq-767-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex.mq-767-flex-col-expand > * {
+    width: 100%;
+  }
+  .flex.mq-767-flex-ai-s {
+    align-items: flex-start;
+  }
+  .flex.mq-767-flex-ai-c {
+    align-items: center;
+  }
+  .flex.mq-767-flex-ac-c {
+    align-content: center;
+  }
+  .flex.mq-767-flex-jc-c {
+    justify-content: center;
+  }
+  .flex.mq-767-flex-jc-s {
+    justify-content: flex-start;
+  }
+  .flex.mq-767-flex-jc-e {
+    justify-content: flex-end;
+  }
+  .flex.mq-767-flex-jc-b {
+    justify-content: space-between;
+  }
+  .flex > *.mq-767-flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex > *.mq-767-flex-grow {
+    flex-grow: 1;
+  }
+  .flex > *.mq-767-flex-min-width-unset {
+    min-width: unset;
+  }
+  .flex > *.mq-767-flex-min-width-auto {
+    min-width: auto;
+  }
+}
+.g-unset {
+  gap: unset;
+}
+
+.g-col-unset {
+  -moz-column-gap: unset;
+       column-gap: unset;
+}
+
+.g-row-unset {
+  row-gap: unset;
+}
+
+.g-1 {
+  gap: 1px;
+}
+
+.g-col-1 {
+  -moz-column-gap: 1px;
+       column-gap: 1px;
+}
+
+.g-row-1 {
+  row-gap: 1px;
+}
+
+.g-2 {
+  gap: 2px;
+}
+
+.g-col-2 {
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+
+.g-row-2 {
+  row-gap: 2px;
+}
+
+.g-4 {
+  gap: 4px;
+}
+
+.g-col-4 {
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+
+.g-row-4 {
+  row-gap: 4px;
+}
+
+.g-6 {
+  gap: 6px;
+}
+
+.g-col-6 {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+
+.g-row-6 {
+  row-gap: 6px;
+}
+
+.g-8 {
+  gap: 8px;
+}
+
+.g-col-8 {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.g-row-8 {
+  row-gap: 8px;
+}
+
+.g-12 {
+  gap: 12px;
+}
+
+.g-col-12 {
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+.g-row-12 {
+  row-gap: 12px;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.g-col-16 {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.g-row-16 {
+  row-gap: 16px;
+}
+
+.g-18 {
+  gap: 18px;
+}
+
+.g-col-18 {
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.g-row-18 {
+  row-gap: 18px;
+}
+
+.g-24 {
+  gap: 24px;
+}
+
+.g-col-24 {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
+.g-row-24 {
+  row-gap: 24px;
+}
+
+.g-32 {
+  gap: 32px;
+}
+
+.g-col-32 {
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.g-row-32 {
+  row-gap: 32px;
+}
+
+.g-40 {
+  gap: 40px;
+}
+
+.g-col-40 {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.g-row-40 {
+  row-gap: 40px;
+}
+
+.g-48 {
+  gap: 48px;
+}
+
+.g-col-48 {
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.g-row-48 {
+  row-gap: 48px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .mq-1400-g-unset {
+    gap: unset;
+  }
+  .mq-1400-g-col-unset {
+    -moz-column-gap: unset;
+         column-gap: unset;
+  }
+  .mq-1400-g-row-unset {
+    row-gap: unset;
+  }
+  .mq-1400-g-1 {
+    gap: 1px;
+  }
+  .mq-1400-g-col-1 {
+    -moz-column-gap: 1px;
+         column-gap: 1px;
+  }
+  .mq-1400-g-row-1 {
+    row-gap: 1px;
+  }
+  .mq-1400-g-2 {
+    gap: 2px;
+  }
+  .mq-1400-g-col-2 {
+    -moz-column-gap: 2px;
+         column-gap: 2px;
+  }
+  .mq-1400-g-row-2 {
+    row-gap: 2px;
+  }
+  .mq-1400-g-4 {
+    gap: 4px;
+  }
+  .mq-1400-g-col-4 {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  .mq-1400-g-row-4 {
+    row-gap: 4px;
+  }
+  .mq-1400-g-6 {
+    gap: 6px;
+  }
+  .mq-1400-g-col-6 {
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+  }
+  .mq-1400-g-row-6 {
+    row-gap: 6px;
+  }
+  .mq-1400-g-8 {
+    gap: 8px;
+  }
+  .mq-1400-g-col-8 {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .mq-1400-g-row-8 {
+    row-gap: 8px;
+  }
+  .mq-1400-g-12 {
+    gap: 12px;
+  }
+  .mq-1400-g-col-12 {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .mq-1400-g-row-12 {
+    row-gap: 12px;
+  }
+  .mq-1400-g-16 {
+    gap: 16px;
+  }
+  .mq-1400-g-col-16 {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .mq-1400-g-row-16 {
+    row-gap: 16px;
+  }
+  .mq-1400-g-18 {
+    gap: 18px;
+  }
+  .mq-1400-g-col-18 {
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+  }
+  .mq-1400-g-row-18 {
+    row-gap: 18px;
+  }
+  .mq-1400-g-24 {
+    gap: 24px;
+  }
+  .mq-1400-g-col-24 {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .mq-1400-g-row-24 {
+    row-gap: 24px;
+  }
+  .mq-1400-g-32 {
+    gap: 32px;
+  }
+  .mq-1400-g-col-32 {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .mq-1400-g-row-32 {
+    row-gap: 32px;
+  }
+  .mq-1400-g-40 {
+    gap: 40px;
+  }
+  .mq-1400-g-col-40 {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .mq-1400-g-row-40 {
+    row-gap: 40px;
+  }
+  .mq-1400-g-48 {
+    gap: 48px;
+  }
+  .mq-1400-g-col-48 {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+  }
+  .mq-1400-g-row-48 {
+    row-gap: 48px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .mq-1023-g-unset {
+    gap: unset;
+  }
+  .mq-1023-g-col-unset {
+    -moz-column-gap: unset;
+         column-gap: unset;
+  }
+  .mq-1023-g-row-unset {
+    row-gap: unset;
+  }
+  .mq-1023-g-1 {
+    gap: 1px;
+  }
+  .mq-1023-g-col-1 {
+    -moz-column-gap: 1px;
+         column-gap: 1px;
+  }
+  .mq-1023-g-row-1 {
+    row-gap: 1px;
+  }
+  .mq-1023-g-2 {
+    gap: 2px;
+  }
+  .mq-1023-g-col-2 {
+    -moz-column-gap: 2px;
+         column-gap: 2px;
+  }
+  .mq-1023-g-row-2 {
+    row-gap: 2px;
+  }
+  .mq-1023-g-4 {
+    gap: 4px;
+  }
+  .mq-1023-g-col-4 {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  .mq-1023-g-row-4 {
+    row-gap: 4px;
+  }
+  .mq-1023-g-6 {
+    gap: 6px;
+  }
+  .mq-1023-g-col-6 {
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+  }
+  .mq-1023-g-row-6 {
+    row-gap: 6px;
+  }
+  .mq-1023-g-8 {
+    gap: 8px;
+  }
+  .mq-1023-g-col-8 {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .mq-1023-g-row-8 {
+    row-gap: 8px;
+  }
+  .mq-1023-g-12 {
+    gap: 12px;
+  }
+  .mq-1023-g-col-12 {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .mq-1023-g-row-12 {
+    row-gap: 12px;
+  }
+  .mq-1023-g-16 {
+    gap: 16px;
+  }
+  .mq-1023-g-col-16 {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .mq-1023-g-row-16 {
+    row-gap: 16px;
+  }
+  .mq-1023-g-18 {
+    gap: 18px;
+  }
+  .mq-1023-g-col-18 {
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+  }
+  .mq-1023-g-row-18 {
+    row-gap: 18px;
+  }
+  .mq-1023-g-24 {
+    gap: 24px;
+  }
+  .mq-1023-g-col-24 {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .mq-1023-g-row-24 {
+    row-gap: 24px;
+  }
+  .mq-1023-g-32 {
+    gap: 32px;
+  }
+  .mq-1023-g-col-32 {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .mq-1023-g-row-32 {
+    row-gap: 32px;
+  }
+  .mq-1023-g-40 {
+    gap: 40px;
+  }
+  .mq-1023-g-col-40 {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .mq-1023-g-row-40 {
+    row-gap: 40px;
+  }
+  .mq-1023-g-48 {
+    gap: 48px;
+  }
+  .mq-1023-g-col-48 {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+  }
+  .mq-1023-g-row-48 {
+    row-gap: 48px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mq-767-g-unset {
+    gap: unset;
+  }
+  .mq-767-g-col-unset {
+    -moz-column-gap: unset;
+         column-gap: unset;
+  }
+  .mq-767-g-row-unset {
+    row-gap: unset;
+  }
+  .mq-767-g-1 {
+    gap: 1px;
+  }
+  .mq-767-g-col-1 {
+    -moz-column-gap: 1px;
+         column-gap: 1px;
+  }
+  .mq-767-g-row-1 {
+    row-gap: 1px;
+  }
+  .mq-767-g-2 {
+    gap: 2px;
+  }
+  .mq-767-g-col-2 {
+    -moz-column-gap: 2px;
+         column-gap: 2px;
+  }
+  .mq-767-g-row-2 {
+    row-gap: 2px;
+  }
+  .mq-767-g-4 {
+    gap: 4px;
+  }
+  .mq-767-g-col-4 {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  .mq-767-g-row-4 {
+    row-gap: 4px;
+  }
+  .mq-767-g-6 {
+    gap: 6px;
+  }
+  .mq-767-g-col-6 {
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+  }
+  .mq-767-g-row-6 {
+    row-gap: 6px;
+  }
+  .mq-767-g-8 {
+    gap: 8px;
+  }
+  .mq-767-g-col-8 {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .mq-767-g-row-8 {
+    row-gap: 8px;
+  }
+  .mq-767-g-12 {
+    gap: 12px;
+  }
+  .mq-767-g-col-12 {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .mq-767-g-row-12 {
+    row-gap: 12px;
+  }
+  .mq-767-g-16 {
+    gap: 16px;
+  }
+  .mq-767-g-col-16 {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .mq-767-g-row-16 {
+    row-gap: 16px;
+  }
+  .mq-767-g-18 {
+    gap: 18px;
+  }
+  .mq-767-g-col-18 {
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+  }
+  .mq-767-g-row-18 {
+    row-gap: 18px;
+  }
+  .mq-767-g-24 {
+    gap: 24px;
+  }
+  .mq-767-g-col-24 {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .mq-767-g-row-24 {
+    row-gap: 24px;
+  }
+  .mq-767-g-32 {
+    gap: 32px;
+  }
+  .mq-767-g-col-32 {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .mq-767-g-row-32 {
+    row-gap: 32px;
+  }
+  .mq-767-g-40 {
+    gap: 40px;
+  }
+  .mq-767-g-col-40 {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .mq-767-g-row-40 {
+    row-gap: 40px;
+  }
+  .mq-767-g-48 {
+    gap: 48px;
+  }
+  .mq-767-g-col-48 {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+  }
+  .mq-767-g-row-48 {
+    row-gap: 48px;
+  }
+}
+.m-r-unset {
+  margin-right: unset;
+}
+
+.m-r-4 {
+  margin-right: 4px;
+}
+
+.m-r-6 {
+  margin-right: 6px;
+}
+
+.m-r-8 {
+  margin-right: 8px;
+}
+
+.m-r-12 {
+  margin-right: 12px;
+}
+
+.m-r-14 {
+  margin-right: 14px;
+}
+
+.m-r-16 {
+  margin-right: 16px;
+}
+
+.m-r-18 {
+  margin-right: 18px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-r-24 {
+  margin-right: 24px;
+}
+
+.m-r-32 {
+  margin-right: 32px;
+}
+
+.m-r-38 {
+  margin-right: 38px;
+}
+
+.m-r-40 {
+  margin-right: 40px;
+}
+
+.m-r-48 {
+  margin-right: 48px;
+}
+
+.m-r-56 {
+  margin-right: 56px;
+}
+
+.m-b-unset {
+  margin-bottom: unset;
+}
+
+.m-b-4 {
+  margin-bottom: 4px;
+}
+
+.m-b-6 {
+  margin-bottom: 6px;
+}
+
+.m-b-8 {
+  margin-bottom: 8px;
+}
+
+.m-b-12 {
+  margin-bottom: 12px;
+}
+
+.m-b-14 {
+  margin-bottom: 14px;
+}
+
+.m-b-16 {
+  margin-bottom: 16px;
+}
+
+.m-b-18 {
+  margin-bottom: 18px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-b-24 {
+  margin-bottom: 24px;
+}
+
+.m-b-32 {
+  margin-bottom: 32px;
+}
+
+.m-b-38 {
+  margin-bottom: 38px;
+}
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+
+.m-b-48 {
+  margin-bottom: 48px;
+}
+
+.m-b-56 {
+  margin-bottom: 56px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .mq-1400-m-r-unset {
+    margin-right: unset;
+  }
+  .mq-1400-m-r-4 {
+    margin-right: 4px;
+  }
+  .mq-1400-m-r-6 {
+    margin-right: 6px;
+  }
+  .mq-1400-m-r-8 {
+    margin-right: 8px;
+  }
+  .mq-1400-m-r-12 {
+    margin-right: 12px;
+  }
+  .mq-1400-m-r-14 {
+    margin-right: 14px;
+  }
+  .mq-1400-m-r-16 {
+    margin-right: 16px;
+  }
+  .mq-1400-m-r-18 {
+    margin-right: 18px;
+  }
+  .mq-1400-m-r-20 {
+    margin-right: 20px;
+  }
+  .mq-1400-m-r-24 {
+    margin-right: 24px;
+  }
+  .mq-1400-m-r-32 {
+    margin-right: 32px;
+  }
+  .mq-1400-m-r-38 {
+    margin-right: 38px;
+  }
+  .mq-1400-m-r-40 {
+    margin-right: 40px;
+  }
+  .mq-1400-m-r-48 {
+    margin-right: 48px;
+  }
+  .mq-1400-m-r-56 {
+    margin-right: 56px;
+  }
+  .mq-1400-m-b-unset {
+    margin-bottom: unset;
+  }
+  .mq-1400-m-b-4 {
+    margin-bottom: 4px;
+  }
+  .mq-1400-m-b-6 {
+    margin-bottom: 6px;
+  }
+  .mq-1400-m-b-8 {
+    margin-bottom: 8px;
+  }
+  .mq-1400-m-b-12 {
+    margin-bottom: 12px;
+  }
+  .mq-1400-m-b-14 {
+    margin-bottom: 14px;
+  }
+  .mq-1400-m-b-16 {
+    margin-bottom: 16px;
+  }
+  .mq-1400-m-b-18 {
+    margin-bottom: 18px;
+  }
+  .mq-1400-m-b-20 {
+    margin-bottom: 20px;
+  }
+  .mq-1400-m-b-24 {
+    margin-bottom: 24px;
+  }
+  .mq-1400-m-b-32 {
+    margin-bottom: 32px;
+  }
+  .mq-1400-m-b-38 {
+    margin-bottom: 38px;
+  }
+  .mq-1400-m-b-40 {
+    margin-bottom: 40px;
+  }
+  .mq-1400-m-b-48 {
+    margin-bottom: 48px;
+  }
+  .mq-1400-m-b-56 {
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .mq-1023-m-r-unset {
+    margin-right: unset;
+  }
+  .mq-1023-m-r-4 {
+    margin-right: 4px;
+  }
+  .mq-1023-m-r-6 {
+    margin-right: 6px;
+  }
+  .mq-1023-m-r-8 {
+    margin-right: 8px;
+  }
+  .mq-1023-m-r-12 {
+    margin-right: 12px;
+  }
+  .mq-1023-m-r-14 {
+    margin-right: 14px;
+  }
+  .mq-1023-m-r-16 {
+    margin-right: 16px;
+  }
+  .mq-1023-m-r-18 {
+    margin-right: 18px;
+  }
+  .mq-1023-m-r-20 {
+    margin-right: 20px;
+  }
+  .mq-1023-m-r-24 {
+    margin-right: 24px;
+  }
+  .mq-1023-m-r-32 {
+    margin-right: 32px;
+  }
+  .mq-1023-m-r-38 {
+    margin-right: 38px;
+  }
+  .mq-1023-m-r-40 {
+    margin-right: 40px;
+  }
+  .mq-1023-m-r-48 {
+    margin-right: 48px;
+  }
+  .mq-1023-m-r-56 {
+    margin-right: 56px;
+  }
+  .mq-1023-m-b-unset {
+    margin-bottom: unset;
+  }
+  .mq-1023-m-b-4 {
+    margin-bottom: 4px;
+  }
+  .mq-1023-m-b-6 {
+    margin-bottom: 6px;
+  }
+  .mq-1023-m-b-8 {
+    margin-bottom: 8px;
+  }
+  .mq-1023-m-b-12 {
+    margin-bottom: 12px;
+  }
+  .mq-1023-m-b-14 {
+    margin-bottom: 14px;
+  }
+  .mq-1023-m-b-16 {
+    margin-bottom: 16px;
+  }
+  .mq-1023-m-b-18 {
+    margin-bottom: 18px;
+  }
+  .mq-1023-m-b-20 {
+    margin-bottom: 20px;
+  }
+  .mq-1023-m-b-24 {
+    margin-bottom: 24px;
+  }
+  .mq-1023-m-b-32 {
+    margin-bottom: 32px;
+  }
+  .mq-1023-m-b-38 {
+    margin-bottom: 38px;
+  }
+  .mq-1023-m-b-40 {
+    margin-bottom: 40px;
+  }
+  .mq-1023-m-b-48 {
+    margin-bottom: 48px;
+  }
+  .mq-1023-m-b-56 {
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mq-767-m-r-unset {
+    margin-right: unset;
+  }
+  .mq-767-m-r-4 {
+    margin-right: 4px;
+  }
+  .mq-767-m-r-6 {
+    margin-right: 6px;
+  }
+  .mq-767-m-r-8 {
+    margin-right: 8px;
+  }
+  .mq-767-m-r-12 {
+    margin-right: 12px;
+  }
+  .mq-767-m-r-14 {
+    margin-right: 14px;
+  }
+  .mq-767-m-r-16 {
+    margin-right: 16px;
+  }
+  .mq-767-m-r-18 {
+    margin-right: 18px;
+  }
+  .mq-767-m-r-20 {
+    margin-right: 20px;
+  }
+  .mq-767-m-r-24 {
+    margin-right: 24px;
+  }
+  .mq-767-m-r-32 {
+    margin-right: 32px;
+  }
+  .mq-767-m-r-38 {
+    margin-right: 38px;
+  }
+  .mq-767-m-r-40 {
+    margin-right: 40px;
+  }
+  .mq-767-m-r-48 {
+    margin-right: 48px;
+  }
+  .mq-767-m-r-56 {
+    margin-right: 56px;
+  }
+  .mq-767-m-b-unset {
+    margin-bottom: unset;
+  }
+  .mq-767-m-b-4 {
+    margin-bottom: 4px;
+  }
+  .mq-767-m-b-6 {
+    margin-bottom: 6px;
+  }
+  .mq-767-m-b-8 {
+    margin-bottom: 8px;
+  }
+  .mq-767-m-b-12 {
+    margin-bottom: 12px;
+  }
+  .mq-767-m-b-14 {
+    margin-bottom: 14px;
+  }
+  .mq-767-m-b-16 {
+    margin-bottom: 16px;
+  }
+  .mq-767-m-b-18 {
+    margin-bottom: 18px;
+  }
+  .mq-767-m-b-20 {
+    margin-bottom: 20px;
+  }
+  .mq-767-m-b-24 {
+    margin-bottom: 24px;
+  }
+  .mq-767-m-b-32 {
+    margin-bottom: 32px;
+  }
+  .mq-767-m-b-38 {
+    margin-bottom: 38px;
+  }
+  .mq-767-m-b-40 {
+    margin-bottom: 40px;
+  }
+  .mq-767-m-b-48 {
+    margin-bottom: 48px;
+  }
+  .mq-767-m-b-56 {
+    margin-bottom: 56px;
+  }
+}
+.ta-left {
+  text-align: left;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.va-top {
+  vertical-align: top;
+}
+
+.va-bottom {
+  vertical-align: bottom;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1400px) {
+  .mq-1400-ta-left {
+    text-align: left;
+  }
+  .mq-1400-ta-right {
+    text-align: right;
+  }
+  .mq-1400-ta-center {
+    text-align: center;
+  }
+  .mq-1400-va-top {
+    vertical-align: top;
+  }
+  .mq-1400-va-bottom {
+    vertical-align: bottom;
+  }
+  .mq-1400-va-middle {
+    vertical-align: middle;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .mq-1023-ta-left {
+    text-align: left;
+  }
+  .mq-1023-ta-right {
+    text-align: right;
+  }
+  .mq-1023-ta-center {
+    text-align: center;
+  }
+  .mq-1023-va-top {
+    vertical-align: top;
+  }
+  .mq-1023-va-bottom {
+    vertical-align: bottom;
+  }
+  .mq-1023-va-middle {
+    vertical-align: middle;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mq-767-ta-left {
+    text-align: left;
+  }
+  .mq-767-ta-right {
+    text-align: right;
+  }
+  .mq-767-ta-center {
+    text-align: center;
+  }
+  .mq-767-va-top {
+    vertical-align: top;
+  }
+  .mq-767-va-bottom {
+    vertical-align: bottom;
+  }
+  .mq-767-va-middle {
+    vertical-align: middle;
+  }
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+.icon.s-4 {
+  width: 4px;
+  height: 4px;
+}
+.icon.s-8 {
+  width: 8px;
+  height: 8px;
+}
+.icon.s-12 {
+  width: 12px;
+  height: 12px;
+}
+.icon.s-16 {
+  width: 16px;
+  height: 16px;
+}
+.icon.s-18 {
+  width: 18px;
+  height: 18px;
+}
+.icon.s-20 {
+  width: 20px;
+  height: 20px;
+}
+.icon.s-24 {
+  width: 24px;
+  height: 24px;
+}
+.icon.s-32 {
+  width: 32px;
+  height: 32px;
+}
+.icon.s-40 {
+  width: 40px;
+  height: 40px;
+}
+.icon.s-48 {
+  width: 48px;
+  height: 48px;
+}
+.icon.s-56 {
+  width: 56px;
+  height: 56px;
+}
+.icon.s-64 {
+  width: 64px;
+  height: 64px;
+}
+.icon.s-80 {
+  width: 80px;
+  height: 80px;
+}
+.icon.icon-flag.en {
+  background-image: url("../images/icons/flags/en.svg");
+}
+.icon.icon-flag.cn {
+  background-image: url("../images/icons/flags/cn.svg");
+}
+.icon.icon-flag.id {
+  background-image: url("../images/icons/flags/id.svg");
+}
+.icon.icon-flag.vn {
+  background-image: url("../images/icons/flags/vn.svg");
+}
+.icon.icon-flag.th {
+  background-image: url("../images/icons/flags/th.svg");
+}
+.icon.icon-caret-down.white {
+  background-image: url("../images/icons/common/caret-down-white.svg");
+}
+.icon.icon-caret-down.dark {
+  background-image: url("../images/icons/common/caret-down-dark.svg");
+}
+.icon.icon-caret-down.fit {
+  background-size: 188% auto;
+  background-position: center center;
+}
+.icon.icon-chat.yellow {
+  background-image: url("../images/icons/common/chat-yellow.svg");
+}
+.icon.icon-dollar-flow.color-yellow {
+  background-image: url("../images/icons/common/dollar-flow-yellow.svg");
+}
+.icon.icon-timer.yellow {
+  background-image: url("../images/icons/common/timer-yellow.svg");
+}
+.icon.icon-play.yellow {
+  background-image: url("../images/icons/common/play-yellow.svg");
+}
+.icon.icon-close.white {
+  background-image: url("../images/icons/common/close-white.svg");
+}
+.icon.icon-close.dark {
+  background-image: url("../images/icons/common/close-dark.svg");
+}
+.icon.icon-home.white {
+  background-image: url("../images/icons/common/home-white.svg");
+}
+.icon.icon-home.dark {
+  background-image: url("../images/icons/common/home-dark.svg");
+}
+.icon.icon-odds.gray-white {
+  background-image: url("../images/icons/common/odds-gray-white.svg");
+}
+.icon.icon-live-events.gray-white {
+  background-image: url("../images/icons/common/live-events-gray-white.svg");
+}
+.icon.icon-pile-coins.gray-white {
+  background-image: url("../images/icons/common/pile-coins-gray-white.svg");
+}
+.icon.icon-coin-purse.dark {
+  background-image: url("../images/icons/common/coin-purse-dark.svg");
+}
+.icon.icon-profile.dark {
+  background-image: url("../images/icons/common/profile-dark.svg");
+}
+.icon.icon-file.dark {
+  background-image: url("../images/icons/common/file-dark.svg");
+}
+.icon.icon-soccer.white {
+  background-image: url("../images/icons/common/soccer-white.svg");
+}
+.icon.icon-soccer.dark {
+  background-image: url("../images/icons/common/soccer-dark.svg");
+}
+.icon.icon-soccer.gray-white {
+  background-image: url("../images/icons/common/soccer-gray-white.svg");
+}
+.icon.icon-poker-card.white {
+  background-image: url("../images/icons/common/poker-card-white.svg");
+}
+.icon.icon-poker-card.dark {
+  background-image: url("../images/icons/common/poker-card-dark.svg");
+}
+.icon.icon-poker-card.gray-white {
+  background-image: url("../images/icons/common/poker-card-gray-white.svg");
+}
+.icon.icon-live-chat.gray-white {
+  background-image: url("../images/icons/common/live-chat-gray-white.svg");
+}
+.icon.icon-video-camera.gray-white {
+  background-image: url("../images/icons/common/video-camera-gray-white.svg");
+}
+.icon.icon-cash.gray-white {
+  background-image: url("../images/icons/common/cash-gray-white.svg");
+}
+.icon.icon-casino.white {
+  background-image: url("../images/icons/common/casino-white.svg");
+}
+.icon.icon-casino.dark {
+  background-image: url("../images/icons/common/casino-dark.svg");
+}
+.icon.icon-promotion.white {
+  background-image: url("../images/icons/common/promotion-white.svg");
+}
+.icon.icon-promotion.dark {
+  background-image: url("../images/icons/common/promotion-dark.svg");
+}
+.icon.icon-promotion.gray-white {
+  background-image: url("../images/icons/common/promotion-gray-white.svg");
+}
+.icon.icon-vip.white {
+  background-image: url("../images/icons/common/vip-white.svg");
+}
+.icon.icon-vip.dark {
+  background-image: url("../images/icons/common/vip-dark.svg");
+}
+.icon.icon-vip-blurb.security {
+  background-image: url("../images/icons/vip/security.svg");
+}
+.icon.icon-vip-blurb.priority-process {
+  background-image: url("../images/icons/vip/priority-process.svg");
+}
+.icon.icon-vip-blurb.exclusive-promo {
+  background-image: url("../images/icons/vip/exclusive-promo.svg");
+}
+.icon.icon-vip-blurb.dedicated-service {
+  background-image: url("../images/icons/vip/dedicated-service.svg");
+}
+.icon.icon-friend.white {
+  background-image: url("../images/icons/common/friend-white.svg");
+}
+.icon.icon-friend.dark {
+  background-image: url("../images/icons/common/friend-dark.svg");
+}
+.icon.icon-bank.white {
+  background-image: url("../images/icons/common/bank-white.svg");
+}
+.icon.icon-about.dark {
+  background-image: url("../images/icons/common/about-dark.svg");
+}
+.icon.icon-deposit.dark {
+  background-image: url("../images/icons/common/deposit-dark.svg");
+}
+.icon.icon-live-casino.dark {
+  background-image: url("../images/icons/common/live-casino-dark.svg");
+}
+.icon.icon-all-sports.dark {
+  background-image: url("../images/icons/common/all-sports-dark.svg");
+}
+.icon.icon-info.white {
+  background-image: url("../images/icons/common/info-white.svg");
+}
+.icon.icon-affiliate.white {
+  background-image: url("../images/icons/common/affiliate-white.svg");
+}
+.icon.icon-affiliate.dark {
+  background-image: url("../images/icons/common/affiliate-dark.svg");
+}
+.icon.icon-check.green {
+  background-image: url("../images/icons/common/check-green.svg");
+}
+.icon.icon-exclamation-red {
+  background-image: url("../images/icons/common/exclamation-red.svg");
+}
+.icon.icon-loud-speaker.fit {
+  background-size: 132% auto;
+  background-position: center center;
+}
+.icon.icon-loud-speaker.white {
+  background-image: url("../images/icons/common/loud-speaker-white.svg");
+}
+.icon.icon-loud-speaker.dark {
+  background-image: url("../images/icons/common/loud-speaker-dark.svg");
+}
+.icon.icon-triangle.red {
+  background-image: url("../images/icons/common/triangle-down-red.svg");
+}
+.icon.icon-triangle.green {
+  background-image: url("../images/icons/common/triangle-up-green.svg");
+}
+.icon.icon-team.arsenal {
+  background-image: url("../images/icons/teams/arsenal.svg");
+}
+.icon.icon-team.manchester-city {
+  background-image: url("../images/icons/teams/manchester-city.svg");
+}
+.icon.icon-casino-provider.microgaming {
+  background-image: url("../images/icons/casino/providers/microgaming.svg");
+}
+.icon.icon-casino-provider.habanero {
+  background-image: url("../images/icons/casino/providers/habanero.svg");
+}
+.icon.icon-casino-provider.isoftbet {
+  background-image: url("../images/icons/casino/providers/isoftbet.svg");
+}
+.icon.icon-casino-provider.skywind {
+  background-image: url("../images/icons/casino/providers/skywind.svg");
+}
+.icon.icon-casino-provider.cq9 {
+  background-image: url("../images/icons/casino/providers/cq9.svg");
+}
+.icon.icon-vip-emblem.bronze {
+  background-image: url("../images/icons/vip/emblem/bronze.png");
+}
+.icon.icon-vip-emblem.silver {
+  background-image: url("../images/icons/vip/emblem/silver.png");
+}
+.icon.icon-vip-emblem.gold {
+  background-image: url("../images/icons/vip/emblem/gold.png");
+}
+.icon.icon-vip-emblem.platinum {
+  background-image: url("../images/icons/vip/emblem/platinum.png");
+}
+.icon.icon-vip-emblem.diamond {
+  background-image: url("../images/icons/vip/emblem/diamond.png");
+}
+
+@media only screen and (max-width: 1400px) {
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+  }
+  .icon.mq-1400-s-4 {
+    width: 4px;
+    height: 4px;
+  }
+  .icon.mq-1400-s-8 {
+    width: 8px;
+    height: 8px;
+  }
+  .icon.mq-1400-s-12 {
+    width: 12px;
+    height: 12px;
+  }
+  .icon.mq-1400-s-16 {
+    width: 16px;
+    height: 16px;
+  }
+  .icon.mq-1400-s-18 {
+    width: 18px;
+    height: 18px;
+  }
+  .icon.mq-1400-s-20 {
+    width: 20px;
+    height: 20px;
+  }
+  .icon.mq-1400-s-24 {
+    width: 24px;
+    height: 24px;
+  }
+  .icon.mq-1400-s-32 {
+    width: 32px;
+    height: 32px;
+  }
+  .icon.mq-1400-s-40 {
+    width: 40px;
+    height: 40px;
+  }
+  .icon.mq-1400-s-48 {
+    width: 48px;
+    height: 48px;
+  }
+  .icon.mq-1400-s-56 {
+    width: 56px;
+    height: 56px;
+  }
+  .icon.mq-1400-s-64 {
+    width: 64px;
+    height: 64px;
+  }
+  .icon.mq-1400-s-80 {
+    width: 80px;
+    height: 80px;
+  }
+  .icon.icon-flag.en {
+    background-image: url("../images/icons/flags/en.svg");
+  }
+  .icon.icon-flag.cn {
+    background-image: url("../images/icons/flags/cn.svg");
+  }
+  .icon.icon-flag.id {
+    background-image: url("../images/icons/flags/id.svg");
+  }
+  .icon.icon-flag.vn {
+    background-image: url("../images/icons/flags/vn.svg");
+  }
+  .icon.icon-flag.th {
+    background-image: url("../images/icons/flags/th.svg");
+  }
+  .icon.icon-caret-down.white {
+    background-image: url("../images/icons/common/caret-down-white.svg");
+  }
+  .icon.icon-caret-down.dark {
+    background-image: url("../images/icons/common/caret-down-dark.svg");
+  }
+  .icon.icon-caret-down.fit {
+    background-size: 188% auto;
+    background-position: center center;
+  }
+  .icon.icon-chat.yellow {
+    background-image: url("../images/icons/common/chat-yellow.svg");
+  }
+  .icon.icon-dollar-flow.color-yellow {
+    background-image: url("../images/icons/common/dollar-flow-yellow.svg");
+  }
+  .icon.icon-timer.yellow {
+    background-image: url("../images/icons/common/timer-yellow.svg");
+  }
+  .icon.icon-play.yellow {
+    background-image: url("../images/icons/common/play-yellow.svg");
+  }
+  .icon.icon-close.white {
+    background-image: url("../images/icons/common/close-white.svg");
+  }
+  .icon.icon-close.dark {
+    background-image: url("../images/icons/common/close-dark.svg");
+  }
+  .icon.icon-home.white {
+    background-image: url("../images/icons/common/home-white.svg");
+  }
+  .icon.icon-home.dark {
+    background-image: url("../images/icons/common/home-dark.svg");
+  }
+  .icon.icon-odds.gray-white {
+    background-image: url("../images/icons/common/odds-gray-white.svg");
+  }
+  .icon.icon-live-events.gray-white {
+    background-image: url("../images/icons/common/live-events-gray-white.svg");
+  }
+  .icon.icon-pile-coins.gray-white {
+    background-image: url("../images/icons/common/pile-coins-gray-white.svg");
+  }
+  .icon.icon-coin-purse.dark {
+    background-image: url("../images/icons/common/coin-purse-dark.svg");
+  }
+  .icon.icon-profile.dark {
+    background-image: url("../images/icons/common/profile-dark.svg");
+  }
+  .icon.icon-file.dark {
+    background-image: url("../images/icons/common/file-dark.svg");
+  }
+  .icon.icon-soccer.white {
+    background-image: url("../images/icons/common/soccer-white.svg");
+  }
+  .icon.icon-soccer.dark {
+    background-image: url("../images/icons/common/soccer-dark.svg");
+  }
+  .icon.icon-soccer.gray-white {
+    background-image: url("../images/icons/common/soccer-gray-white.svg");
+  }
+  .icon.icon-poker-card.white {
+    background-image: url("../images/icons/common/poker-card-white.svg");
+  }
+  .icon.icon-poker-card.dark {
+    background-image: url("../images/icons/common/poker-card-dark.svg");
+  }
+  .icon.icon-poker-card.gray-white {
+    background-image: url("../images/icons/common/poker-card-gray-white.svg");
+  }
+  .icon.icon-live-chat.gray-white {
+    background-image: url("../images/icons/common/live-chat-gray-white.svg");
+  }
+  .icon.icon-video-camera.gray-white {
+    background-image: url("../images/icons/common/video-camera-gray-white.svg");
+  }
+  .icon.icon-cash.gray-white {
+    background-image: url("../images/icons/common/cash-gray-white.svg");
+  }
+  .icon.icon-casino.white {
+    background-image: url("../images/icons/common/casino-white.svg");
+  }
+  .icon.icon-casino.dark {
+    background-image: url("../images/icons/common/casino-dark.svg");
+  }
+  .icon.icon-promotion.white {
+    background-image: url("../images/icons/common/promotion-white.svg");
+  }
+  .icon.icon-promotion.dark {
+    background-image: url("../images/icons/common/promotion-dark.svg");
+  }
+  .icon.icon-promotion.gray-white {
+    background-image: url("../images/icons/common/promotion-gray-white.svg");
+  }
+  .icon.icon-vip.white {
+    background-image: url("../images/icons/common/vip-white.svg");
+  }
+  .icon.icon-vip.dark {
+    background-image: url("../images/icons/common/vip-dark.svg");
+  }
+  .icon.icon-vip-blurb.security {
+    background-image: url("../images/icons/vip/security.svg");
+  }
+  .icon.icon-vip-blurb.priority-process {
+    background-image: url("../images/icons/vip/priority-process.svg");
+  }
+  .icon.icon-vip-blurb.exclusive-promo {
+    background-image: url("../images/icons/vip/exclusive-promo.svg");
+  }
+  .icon.icon-vip-blurb.dedicated-service {
+    background-image: url("../images/icons/vip/dedicated-service.svg");
+  }
+  .icon.icon-friend.white {
+    background-image: url("../images/icons/common/friend-white.svg");
+  }
+  .icon.icon-friend.dark {
+    background-image: url("../images/icons/common/friend-dark.svg");
+  }
+  .icon.icon-bank.white {
+    background-image: url("../images/icons/common/bank-white.svg");
+  }
+  .icon.icon-about.dark {
+    background-image: url("../images/icons/common/about-dark.svg");
+  }
+  .icon.icon-deposit.dark {
+    background-image: url("../images/icons/common/deposit-dark.svg");
+  }
+  .icon.icon-live-casino.dark {
+    background-image: url("../images/icons/common/live-casino-dark.svg");
+  }
+  .icon.icon-all-sports.dark {
+    background-image: url("../images/icons/common/all-sports-dark.svg");
+  }
+  .icon.icon-info.white {
+    background-image: url("../images/icons/common/info-white.svg");
+  }
+  .icon.icon-affiliate.white {
+    background-image: url("../images/icons/common/affiliate-white.svg");
+  }
+  .icon.icon-affiliate.dark {
+    background-image: url("../images/icons/common/affiliate-dark.svg");
+  }
+  .icon.icon-check.green {
+    background-image: url("../images/icons/common/check-green.svg");
+  }
+  .icon.icon-exclamation-red {
+    background-image: url("../images/icons/common/exclamation-red.svg");
+  }
+  .icon.icon-loud-speaker.fit {
+    background-size: 132% auto;
+    background-position: center center;
+  }
+  .icon.icon-loud-speaker.white {
+    background-image: url("../images/icons/common/loud-speaker-white.svg");
+  }
+  .icon.icon-loud-speaker.dark {
+    background-image: url("../images/icons/common/loud-speaker-dark.svg");
+  }
+  .icon.icon-triangle.red {
+    background-image: url("../images/icons/common/triangle-down-red.svg");
+  }
+  .icon.icon-triangle.green {
+    background-image: url("../images/icons/common/triangle-up-green.svg");
+  }
+  .icon.icon-team.arsenal {
+    background-image: url("../images/icons/teams/arsenal.svg");
+  }
+  .icon.icon-team.manchester-city {
+    background-image: url("../images/icons/teams/manchester-city.svg");
+  }
+  .icon.icon-casino-provider.microgaming {
+    background-image: url("../images/icons/casino/providers/microgaming.svg");
+  }
+  .icon.icon-casino-provider.habanero {
+    background-image: url("../images/icons/casino/providers/habanero.svg");
+  }
+  .icon.icon-casino-provider.isoftbet {
+    background-image: url("../images/icons/casino/providers/isoftbet.svg");
+  }
+  .icon.icon-casino-provider.skywind {
+    background-image: url("../images/icons/casino/providers/skywind.svg");
+  }
+  .icon.icon-casino-provider.cq9 {
+    background-image: url("../images/icons/casino/providers/cq9.svg");
+  }
+  .icon.icon-vip-emblem.bronze {
+    background-image: url("../images/icons/vip/emblem/bronze.png");
+  }
+  .icon.icon-vip-emblem.silver {
+    background-image: url("../images/icons/vip/emblem/silver.png");
+  }
+  .icon.icon-vip-emblem.gold {
+    background-image: url("../images/icons/vip/emblem/gold.png");
+  }
+  .icon.icon-vip-emblem.platinum {
+    background-image: url("../images/icons/vip/emblem/platinum.png");
+  }
+  .icon.icon-vip-emblem.diamond {
+    background-image: url("../images/icons/vip/emblem/diamond.png");
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+  }
+  .icon.mq-1023-s-4 {
+    width: 4px;
+    height: 4px;
+  }
+  .icon.mq-1023-s-8 {
+    width: 8px;
+    height: 8px;
+  }
+  .icon.mq-1023-s-12 {
+    width: 12px;
+    height: 12px;
+  }
+  .icon.mq-1023-s-16 {
+    width: 16px;
+    height: 16px;
+  }
+  .icon.mq-1023-s-18 {
+    width: 18px;
+    height: 18px;
+  }
+  .icon.mq-1023-s-20 {
+    width: 20px;
+    height: 20px;
+  }
+  .icon.mq-1023-s-24 {
+    width: 24px;
+    height: 24px;
+  }
+  .icon.mq-1023-s-32 {
+    width: 32px;
+    height: 32px;
+  }
+  .icon.mq-1023-s-40 {
+    width: 40px;
+    height: 40px;
+  }
+  .icon.mq-1023-s-48 {
+    width: 48px;
+    height: 48px;
+  }
+  .icon.mq-1023-s-56 {
+    width: 56px;
+    height: 56px;
+  }
+  .icon.mq-1023-s-64 {
+    width: 64px;
+    height: 64px;
+  }
+  .icon.mq-1023-s-80 {
+    width: 80px;
+    height: 80px;
+  }
+  .icon.icon-flag.en {
+    background-image: url("../images/icons/flags/en.svg");
+  }
+  .icon.icon-flag.cn {
+    background-image: url("../images/icons/flags/cn.svg");
+  }
+  .icon.icon-flag.id {
+    background-image: url("../images/icons/flags/id.svg");
+  }
+  .icon.icon-flag.vn {
+    background-image: url("../images/icons/flags/vn.svg");
+  }
+  .icon.icon-flag.th {
+    background-image: url("../images/icons/flags/th.svg");
+  }
+  .icon.icon-caret-down.white {
+    background-image: url("../images/icons/common/caret-down-white.svg");
+  }
+  .icon.icon-caret-down.dark {
+    background-image: url("../images/icons/common/caret-down-dark.svg");
+  }
+  .icon.icon-caret-down.fit {
+    background-size: 188% auto;
+    background-position: center center;
+  }
+  .icon.icon-chat.yellow {
+    background-image: url("../images/icons/common/chat-yellow.svg");
+  }
+  .icon.icon-dollar-flow.color-yellow {
+    background-image: url("../images/icons/common/dollar-flow-yellow.svg");
+  }
+  .icon.icon-timer.yellow {
+    background-image: url("../images/icons/common/timer-yellow.svg");
+  }
+  .icon.icon-play.yellow {
+    background-image: url("../images/icons/common/play-yellow.svg");
+  }
+  .icon.icon-close.white {
+    background-image: url("../images/icons/common/close-white.svg");
+  }
+  .icon.icon-close.dark {
+    background-image: url("../images/icons/common/close-dark.svg");
+  }
+  .icon.icon-home.white {
+    background-image: url("../images/icons/common/home-white.svg");
+  }
+  .icon.icon-home.dark {
+    background-image: url("../images/icons/common/home-dark.svg");
+  }
+  .icon.icon-odds.gray-white {
+    background-image: url("../images/icons/common/odds-gray-white.svg");
+  }
+  .icon.icon-live-events.gray-white {
+    background-image: url("../images/icons/common/live-events-gray-white.svg");
+  }
+  .icon.icon-pile-coins.gray-white {
+    background-image: url("../images/icons/common/pile-coins-gray-white.svg");
+  }
+  .icon.icon-coin-purse.dark {
+    background-image: url("../images/icons/common/coin-purse-dark.svg");
+  }
+  .icon.icon-profile.dark {
+    background-image: url("../images/icons/common/profile-dark.svg");
+  }
+  .icon.icon-file.dark {
+    background-image: url("../images/icons/common/file-dark.svg");
+  }
+  .icon.icon-soccer.white {
+    background-image: url("../images/icons/common/soccer-white.svg");
+  }
+  .icon.icon-soccer.dark {
+    background-image: url("../images/icons/common/soccer-dark.svg");
+  }
+  .icon.icon-soccer.gray-white {
+    background-image: url("../images/icons/common/soccer-gray-white.svg");
+  }
+  .icon.icon-poker-card.white {
+    background-image: url("../images/icons/common/poker-card-white.svg");
+  }
+  .icon.icon-poker-card.dark {
+    background-image: url("../images/icons/common/poker-card-dark.svg");
+  }
+  .icon.icon-poker-card.gray-white {
+    background-image: url("../images/icons/common/poker-card-gray-white.svg");
+  }
+  .icon.icon-live-chat.gray-white {
+    background-image: url("../images/icons/common/live-chat-gray-white.svg");
+  }
+  .icon.icon-video-camera.gray-white {
+    background-image: url("../images/icons/common/video-camera-gray-white.svg");
+  }
+  .icon.icon-cash.gray-white {
+    background-image: url("../images/icons/common/cash-gray-white.svg");
+  }
+  .icon.icon-casino.white {
+    background-image: url("../images/icons/common/casino-white.svg");
+  }
+  .icon.icon-casino.dark {
+    background-image: url("../images/icons/common/casino-dark.svg");
+  }
+  .icon.icon-promotion.white {
+    background-image: url("../images/icons/common/promotion-white.svg");
+  }
+  .icon.icon-promotion.dark {
+    background-image: url("../images/icons/common/promotion-dark.svg");
+  }
+  .icon.icon-promotion.gray-white {
+    background-image: url("../images/icons/common/promotion-gray-white.svg");
+  }
+  .icon.icon-vip.white {
+    background-image: url("../images/icons/common/vip-white.svg");
+  }
+  .icon.icon-vip.dark {
+    background-image: url("../images/icons/common/vip-dark.svg");
+  }
+  .icon.icon-vip-blurb.security {
+    background-image: url("../images/icons/vip/security.svg");
+  }
+  .icon.icon-vip-blurb.priority-process {
+    background-image: url("../images/icons/vip/priority-process.svg");
+  }
+  .icon.icon-vip-blurb.exclusive-promo {
+    background-image: url("../images/icons/vip/exclusive-promo.svg");
+  }
+  .icon.icon-vip-blurb.dedicated-service {
+    background-image: url("../images/icons/vip/dedicated-service.svg");
+  }
+  .icon.icon-friend.white {
+    background-image: url("../images/icons/common/friend-white.svg");
+  }
+  .icon.icon-friend.dark {
+    background-image: url("../images/icons/common/friend-dark.svg");
+  }
+  .icon.icon-bank.white {
+    background-image: url("../images/icons/common/bank-white.svg");
+  }
+  .icon.icon-about.dark {
+    background-image: url("../images/icons/common/about-dark.svg");
+  }
+  .icon.icon-deposit.dark {
+    background-image: url("../images/icons/common/deposit-dark.svg");
+  }
+  .icon.icon-live-casino.dark {
+    background-image: url("../images/icons/common/live-casino-dark.svg");
+  }
+  .icon.icon-all-sports.dark {
+    background-image: url("../images/icons/common/all-sports-dark.svg");
+  }
+  .icon.icon-info.white {
+    background-image: url("../images/icons/common/info-white.svg");
+  }
+  .icon.icon-affiliate.white {
+    background-image: url("../images/icons/common/affiliate-white.svg");
+  }
+  .icon.icon-affiliate.dark {
+    background-image: url("../images/icons/common/affiliate-dark.svg");
+  }
+  .icon.icon-check.green {
+    background-image: url("../images/icons/common/check-green.svg");
+  }
+  .icon.icon-exclamation-red {
+    background-image: url("../images/icons/common/exclamation-red.svg");
+  }
+  .icon.icon-loud-speaker.fit {
+    background-size: 132% auto;
+    background-position: center center;
+  }
+  .icon.icon-loud-speaker.white {
+    background-image: url("../images/icons/common/loud-speaker-white.svg");
+  }
+  .icon.icon-loud-speaker.dark {
+    background-image: url("../images/icons/common/loud-speaker-dark.svg");
+  }
+  .icon.icon-triangle.red {
+    background-image: url("../images/icons/common/triangle-down-red.svg");
+  }
+  .icon.icon-triangle.green {
+    background-image: url("../images/icons/common/triangle-up-green.svg");
+  }
+  .icon.icon-team.arsenal {
+    background-image: url("../images/icons/teams/arsenal.svg");
+  }
+  .icon.icon-team.manchester-city {
+    background-image: url("../images/icons/teams/manchester-city.svg");
+  }
+  .icon.icon-casino-provider.microgaming {
+    background-image: url("../images/icons/casino/providers/microgaming.svg");
+  }
+  .icon.icon-casino-provider.habanero {
+    background-image: url("../images/icons/casino/providers/habanero.svg");
+  }
+  .icon.icon-casino-provider.isoftbet {
+    background-image: url("../images/icons/casino/providers/isoftbet.svg");
+  }
+  .icon.icon-casino-provider.skywind {
+    background-image: url("../images/icons/casino/providers/skywind.svg");
+  }
+  .icon.icon-casino-provider.cq9 {
+    background-image: url("../images/icons/casino/providers/cq9.svg");
+  }
+  .icon.icon-vip-emblem.bronze {
+    background-image: url("../images/icons/vip/emblem/bronze.png");
+  }
+  .icon.icon-vip-emblem.silver {
+    background-image: url("../images/icons/vip/emblem/silver.png");
+  }
+  .icon.icon-vip-emblem.gold {
+    background-image: url("../images/icons/vip/emblem/gold.png");
+  }
+  .icon.icon-vip-emblem.platinum {
+    background-image: url("../images/icons/vip/emblem/platinum.png");
+  }
+  .icon.icon-vip-emblem.diamond {
+    background-image: url("../images/icons/vip/emblem/diamond.png");
+  }
+}
+@media only screen and (max-width: 767px) {
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+  }
+  .icon.mq-767-s-4 {
+    width: 4px;
+    height: 4px;
+  }
+  .icon.mq-767-s-8 {
+    width: 8px;
+    height: 8px;
+  }
+  .icon.mq-767-s-12 {
+    width: 12px;
+    height: 12px;
+  }
+  .icon.mq-767-s-16 {
+    width: 16px;
+    height: 16px;
+  }
+  .icon.mq-767-s-18 {
+    width: 18px;
+    height: 18px;
+  }
+  .icon.mq-767-s-20 {
+    width: 20px;
+    height: 20px;
+  }
+  .icon.mq-767-s-24 {
+    width: 24px;
+    height: 24px;
+  }
+  .icon.mq-767-s-32 {
+    width: 32px;
+    height: 32px;
+  }
+  .icon.mq-767-s-40 {
+    width: 40px;
+    height: 40px;
+  }
+  .icon.mq-767-s-48 {
+    width: 48px;
+    height: 48px;
+  }
+  .icon.mq-767-s-56 {
+    width: 56px;
+    height: 56px;
+  }
+  .icon.mq-767-s-64 {
+    width: 64px;
+    height: 64px;
+  }
+  .icon.mq-767-s-80 {
+    width: 80px;
+    height: 80px;
+  }
+  .icon.icon-flag.en {
+    background-image: url("../images/icons/flags/en.svg");
+  }
+  .icon.icon-flag.cn {
+    background-image: url("../images/icons/flags/cn.svg");
+  }
+  .icon.icon-flag.id {
+    background-image: url("../images/icons/flags/id.svg");
+  }
+  .icon.icon-flag.vn {
+    background-image: url("../images/icons/flags/vn.svg");
+  }
+  .icon.icon-flag.th {
+    background-image: url("../images/icons/flags/th.svg");
+  }
+  .icon.icon-caret-down.white {
+    background-image: url("../images/icons/common/caret-down-white.svg");
+  }
+  .icon.icon-caret-down.dark {
+    background-image: url("../images/icons/common/caret-down-dark.svg");
+  }
+  .icon.icon-caret-down.fit {
+    background-size: 188% auto;
+    background-position: center center;
+  }
+  .icon.icon-chat.yellow {
+    background-image: url("../images/icons/common/chat-yellow.svg");
+  }
+  .icon.icon-dollar-flow.color-yellow {
+    background-image: url("../images/icons/common/dollar-flow-yellow.svg");
+  }
+  .icon.icon-timer.yellow {
+    background-image: url("../images/icons/common/timer-yellow.svg");
+  }
+  .icon.icon-play.yellow {
+    background-image: url("../images/icons/common/play-yellow.svg");
+  }
+  .icon.icon-close.white {
+    background-image: url("../images/icons/common/close-white.svg");
+  }
+  .icon.icon-close.dark {
+    background-image: url("../images/icons/common/close-dark.svg");
+  }
+  .icon.icon-home.white {
+    background-image: url("../images/icons/common/home-white.svg");
+  }
+  .icon.icon-home.dark {
+    background-image: url("../images/icons/common/home-dark.svg");
+  }
+  .icon.icon-odds.gray-white {
+    background-image: url("../images/icons/common/odds-gray-white.svg");
+  }
+  .icon.icon-live-events.gray-white {
+    background-image: url("../images/icons/common/live-events-gray-white.svg");
+  }
+  .icon.icon-pile-coins.gray-white {
+    background-image: url("../images/icons/common/pile-coins-gray-white.svg");
+  }
+  .icon.icon-coin-purse.dark {
+    background-image: url("../images/icons/common/coin-purse-dark.svg");
+  }
+  .icon.icon-profile.dark {
+    background-image: url("../images/icons/common/profile-dark.svg");
+  }
+  .icon.icon-file.dark {
+    background-image: url("../images/icons/common/file-dark.svg");
+  }
+  .icon.icon-soccer.white {
+    background-image: url("../images/icons/common/soccer-white.svg");
+  }
+  .icon.icon-soccer.dark {
+    background-image: url("../images/icons/common/soccer-dark.svg");
+  }
+  .icon.icon-soccer.gray-white {
+    background-image: url("../images/icons/common/soccer-gray-white.svg");
+  }
+  .icon.icon-poker-card.white {
+    background-image: url("../images/icons/common/poker-card-white.svg");
+  }
+  .icon.icon-poker-card.dark {
+    background-image: url("../images/icons/common/poker-card-dark.svg");
+  }
+  .icon.icon-poker-card.gray-white {
+    background-image: url("../images/icons/common/poker-card-gray-white.svg");
+  }
+  .icon.icon-live-chat.gray-white {
+    background-image: url("../images/icons/common/live-chat-gray-white.svg");
+  }
+  .icon.icon-video-camera.gray-white {
+    background-image: url("../images/icons/common/video-camera-gray-white.svg");
+  }
+  .icon.icon-cash.gray-white {
+    background-image: url("../images/icons/common/cash-gray-white.svg");
+  }
+  .icon.icon-casino.white {
+    background-image: url("../images/icons/common/casino-white.svg");
+  }
+  .icon.icon-casino.dark {
+    background-image: url("../images/icons/common/casino-dark.svg");
+  }
+  .icon.icon-promotion.white {
+    background-image: url("../images/icons/common/promotion-white.svg");
+  }
+  .icon.icon-promotion.dark {
+    background-image: url("../images/icons/common/promotion-dark.svg");
+  }
+  .icon.icon-promotion.gray-white {
+    background-image: url("../images/icons/common/promotion-gray-white.svg");
+  }
+  .icon.icon-vip.white {
+    background-image: url("../images/icons/common/vip-white.svg");
+  }
+  .icon.icon-vip.dark {
+    background-image: url("../images/icons/common/vip-dark.svg");
+  }
+  .icon.icon-vip-blurb.security {
+    background-image: url("../images/icons/vip/security.svg");
+  }
+  .icon.icon-vip-blurb.priority-process {
+    background-image: url("../images/icons/vip/priority-process.svg");
+  }
+  .icon.icon-vip-blurb.exclusive-promo {
+    background-image: url("../images/icons/vip/exclusive-promo.svg");
+  }
+  .icon.icon-vip-blurb.dedicated-service {
+    background-image: url("../images/icons/vip/dedicated-service.svg");
+  }
+  .icon.icon-friend.white {
+    background-image: url("../images/icons/common/friend-white.svg");
+  }
+  .icon.icon-friend.dark {
+    background-image: url("../images/icons/common/friend-dark.svg");
+  }
+  .icon.icon-bank.white {
+    background-image: url("../images/icons/common/bank-white.svg");
+  }
+  .icon.icon-about.dark {
+    background-image: url("../images/icons/common/about-dark.svg");
+  }
+  .icon.icon-deposit.dark {
+    background-image: url("../images/icons/common/deposit-dark.svg");
+  }
+  .icon.icon-live-casino.dark {
+    background-image: url("../images/icons/common/live-casino-dark.svg");
+  }
+  .icon.icon-all-sports.dark {
+    background-image: url("../images/icons/common/all-sports-dark.svg");
+  }
+  .icon.icon-info.white {
+    background-image: url("../images/icons/common/info-white.svg");
+  }
+  .icon.icon-affiliate.white {
+    background-image: url("../images/icons/common/affiliate-white.svg");
+  }
+  .icon.icon-affiliate.dark {
+    background-image: url("../images/icons/common/affiliate-dark.svg");
+  }
+  .icon.icon-check.green {
+    background-image: url("../images/icons/common/check-green.svg");
+  }
+  .icon.icon-exclamation-red {
+    background-image: url("../images/icons/common/exclamation-red.svg");
+  }
+  .icon.icon-loud-speaker.fit {
+    background-size: 132% auto;
+    background-position: center center;
+  }
+  .icon.icon-loud-speaker.white {
+    background-image: url("../images/icons/common/loud-speaker-white.svg");
+  }
+  .icon.icon-loud-speaker.dark {
+    background-image: url("../images/icons/common/loud-speaker-dark.svg");
+  }
+  .icon.icon-triangle.red {
+    background-image: url("../images/icons/common/triangle-down-red.svg");
+  }
+  .icon.icon-triangle.green {
+    background-image: url("../images/icons/common/triangle-up-green.svg");
+  }
+  .icon.icon-team.arsenal {
+    background-image: url("../images/icons/teams/arsenal.svg");
+  }
+  .icon.icon-team.manchester-city {
+    background-image: url("../images/icons/teams/manchester-city.svg");
+  }
+  .icon.icon-casino-provider.microgaming {
+    background-image: url("../images/icons/casino/providers/microgaming.svg");
+  }
+  .icon.icon-casino-provider.habanero {
+    background-image: url("../images/icons/casino/providers/habanero.svg");
+  }
+  .icon.icon-casino-provider.isoftbet {
+    background-image: url("../images/icons/casino/providers/isoftbet.svg");
+  }
+  .icon.icon-casino-provider.skywind {
+    background-image: url("../images/icons/casino/providers/skywind.svg");
+  }
+  .icon.icon-casino-provider.cq9 {
+    background-image: url("../images/icons/casino/providers/cq9.svg");
+  }
+  .icon.icon-vip-emblem.bronze {
+    background-image: url("../images/icons/vip/emblem/bronze.png");
+  }
+  .icon.icon-vip-emblem.silver {
+    background-image: url("../images/icons/vip/emblem/silver.png");
+  }
+  .icon.icon-vip-emblem.gold {
+    background-image: url("../images/icons/vip/emblem/gold.png");
+  }
+  .icon.icon-vip-emblem.platinum {
+    background-image: url("../images/icons/vip/emblem/platinum.png");
+  }
+  .icon.icon-vip-emblem.diamond {
+    background-image: url("../images/icons/vip/emblem/diamond.png");
+  }
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  padding: 0;
+}
+
+.table-layout {
+  display: table;
+}
+.table-layout > .row {
+  display: table-row;
+}
+.table-layout > .row > .col {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.theme-gray {
+  background-color: #F4F4F6;
+}
+
+.theme-dark-blue {
+  background-color: #151d2d;
+  color: #fff;
+}
+
+.color-scheme-light {
+  color: #fff;
+}
+.color-scheme-light a {
+  color: #fff;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  height: 40px;
+  box-sizing: border-box;
+  border: solid 1px #d4d6db;
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #151d2d;
+  outline: 0;
+}
+input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=email]::-moz-placeholder {
+  color: #9399a6;
+}
+input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder {
+  color: #9399a6;
+}
+input[type=text]::placeholder, input[type=password]::placeholder, input[type=email]::placeholder {
+  color: #9399a6;
+}
+
+.input-field {
+  position: relative;
+}
+.input-field input[type=text], .input-field input[type=password], .input-field input[type=email] {
+  width: 100%;
+}
+
+.validation-message {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.validation-message.validation-error {
+  background-color: #eaebee;
+  color: #bf181b;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.validation-message.validation-message-all {
+  background-color: #bf181b;
+}
+
+.skeleton {
+  position: relative;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #EBEBEB;
+  background: linear-gradient(to right, #EBEBEB 8%, #F0F0F0 18%, #EBEBEB 33%);
+  background-size: 800px 104px;
+  border-radius: 4px;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}

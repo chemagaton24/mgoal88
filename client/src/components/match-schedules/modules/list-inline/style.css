@@ -1,0 +1,15 @@
+.module-inline-list-match-schedules .scroller.is-mobile {
+  margin: -10px -16px;
+}
+.module-inline-list-match-schedules .scroller.is-mobile ul {
+  margin: 0 7px;
+}
+.module-inline-list-match-schedules .scroller:not(.is-mobile) {
+  margin-top: -10px;
+}
+.module-inline-list-match-schedules .scroller:not(.is-mobile) ul {
+  margin-bottom: -10px;
+}
+.module-inline-list-match-schedules .scroller ul {
+  padding: 10px;
+}
