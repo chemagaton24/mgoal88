@@ -1,0 +1,21 @@
+.module-form-login {
+    label {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 700;
+    }
+
+    .input-field {
+        input {
+
+            &[type='text'],
+            &[type='password'] {
+                width: 100%;
+            }
+        }
+    }
+
+    .btn[type='submit'] {
+        width: 100%;
+    }
+}

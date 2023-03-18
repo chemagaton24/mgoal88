@@ -1,0 +1,23 @@
+.module-modal-login {
+  max-width: 720px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.module-modal-login .modal-body {
+  aspect-ratio: 1.7142857143;
+  padding: 32px 136px;
+  box-sizing: border-box;
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+  background-color: #26324d;
+  color: #fff;
+}
+.module-modal-login .modal-body a {
+  color: #fff;
+}
+.module-modal-login .logo-img {
+  height: 56px;
+}

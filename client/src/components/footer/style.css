@@ -1,0 +1,68 @@
+footer.footer {
+  color: #9399a6;
+}
+footer.footer a {
+  color: #9399a6;
+}
+footer.footer > .row-1 {
+  background-color: #222939;
+  padding: 16px 0 24px;
+}
+footer.footer > .row-2 {
+  background-color: #39445c;
+  padding: 12px 0;
+}
+footer.footer .available-payments {
+  font-size: 10px;
+}
+footer.footer .available-payments .logo {
+  height: 16px;
+}
+footer.footer .navbar {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 -5px;
+}
+footer.footer .navbar li {
+  position: relative;
+  padding: 0 5px;
+}
+footer.footer .navbar li:not(:last-child):after {
+  content: "|";
+  position: absolute;
+  right: -1px;
+  top: 0;
+}
+footer.footer .navbar a {
+  font-weight: 700;
+}
+footer.footer .game-providers img {
+  height: 40px;
+}
+footer.footer .copyright {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  footer.footer .navbar {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 -3px;
+  }
+  footer.footer .navbar li {
+    padding: 0 3px;
+  }
+  footer.footer .copyright {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer.footer > .row-1 {
+    padding: 16px 0;
+  }
+  footer.footer .game-providers img {
+    height: 24px;
+  }
+}

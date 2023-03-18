@@ -1,0 +1,99 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 991;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 48px 0;
+    box-sizing: border-box;
+    overflow: auto;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+
+    > .module-kind-modal {
+        display: inline-block;
+        pointer-events: auto;
+        backface-visibility: hidden;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    &.modal-animation-default,
+    .modal-animation-fade-from-top {
+        >* {
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: all 300ms;
+
+            @at-root .active#{&} {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    }
+
+    &.modal-animation-fade-from-right {
+        >* {
+            transform: translateX(100%);
+            opacity: 0;
+            transition: all 300ms;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+
+            @at-root .active#{&} {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+    }
+
+    .modal-header {
+        background-color: #26324d;
+        color: #fff;
+        height: 56px;
+        padding: 0 16px;
+        box-sizing: border-box;
+
+        .modal-title {
+            font-size: 18px;
+        }
+    }
+
+    .modal-body {
+        background-color: #fff;
+        text-align: left;
+    }
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 990;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 300ms;
+
+    &.active {
+        pointer-events: auto;
+        opacity: 1;
+    }
+}
+
+.overlay-close-modal-trigger {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .modal {
+        padding: 0;
+    }
+}

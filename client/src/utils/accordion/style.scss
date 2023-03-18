@@ -1,0 +1,32 @@
+.accordion {
+    &.accordion-open-style-dropdown {
+        >.accordion-wrap {
+            position: relative;
+
+            >.accordion-child {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: translateY(100%);
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+
+    .accordion-wrap {
+        &.active {
+            >.accordion-child {
+                display: block;
+            }
+        }
+
+        .accordion-parent {
+            cursor: pointer;
+        }
+
+        .accordion-child {
+            display: none;
+        }
+    }
+}

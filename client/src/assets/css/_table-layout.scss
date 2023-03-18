@@ -1,0 +1,12 @@
+.table-layout {
+    display: table;
+
+    >.row {
+        display: table-row;
+
+        >.col {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}

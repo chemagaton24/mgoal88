@@ -1,0 +1,26 @@
+.page-slogan {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(38, 50, 77) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#26324d", GradientType=0);
+  color: #fff;
+  padding: 40px 0 262px;
+  margin-bottom: -262px;
+  text-align: center;
+}
+.page-slogan .inner {
+  max-width: 668px;
+  margin: 0 auto;
+}
+.page-slogan .slogan {
+  font-size: 40px;
+  line-height: 48px;
+}
+.page-slogan .mini-blurbs ul li {
+  width: 96px;
+}
+.page-slogan .mini-blurbs .label {
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #f4f4f6;
+}

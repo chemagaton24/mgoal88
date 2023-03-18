@@ -1,0 +1,59 @@
+$size-list: (
+    1: 1,
+    2: 2,
+    4: 4,
+    6: 6,
+    8: 8,
+    12: 12,
+    16: 16,
+    18: 18,
+    24: 24,
+    32: 32,
+    40: 40,
+    48: 48,
+);
+
+@mixin styles($viewport: null) {
+    $mq: null;
+    @if $viewport != null {
+        $mq: 'mq-'+#{$viewport+'-'};
+    }
+
+    .#{$mq}g-unset {
+        gap: unset;
+    }
+
+    .#{$mq}g-col-unset {
+        column-gap: unset;
+    }
+
+    .#{$mq}g-row-unset {
+        row-gap: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .#{$mq}g-#{$val} {
+            gap: #{$val}px;
+        }
+
+        .#{$mq}g-col-#{$val} {
+            column-gap: #{$val}px;
+        }
+
+        .#{$mq}g-row-#{$val} {
+            row-gap: #{$val}px;
+        }
+    }
+}
+
+@mixin iterateViewport($viewport) {
+    @media only screen and (max-width: #{$viewport+'px'}) {
+        @include styles($viewport);
+    }
+}
+
+@include styles();
+@include iterateViewport(1400);
+@include iterateViewport(1023);
+@include iterateViewport(767);

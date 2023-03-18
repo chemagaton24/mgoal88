@@ -1,0 +1,108 @@
+.scroller {
+    position: relative;
+    overflow: hidden;
+
+    &.direction-y {
+        display: flex;
+        max-height: 100%;
+    }
+
+    >.controller {
+        @at-root .direction-x#{&} {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        @at-root .direction-y#{&} {
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            max-height: 100%;
+            flex-grow: 1;
+        }
+
+        .inner {
+            @at-root .scroll-active#{&} {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            @at-root .direction-x#{&} {
+                display: inline-flex;
+
+                @at-root :not(.is-mobile).has-scrollbar#{&} {
+                    padding-bottom: 16px;
+                }
+            }
+
+            @at-root .direction-y#{&} {
+                flex-grow: 1;
+
+                @at-root :not(.is-mobile).has-scrollbar#{&} {
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+
+    .scrollbar {
+        position: absolute;
+
+        >.track {
+            position: relative;
+            background-color: #f1f1f1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bar {
+            position: absolute;
+            background-color: #bec2ca;
+            border-radius: 999px;
+
+            @at-root .scroll-active#{&},
+            &:hover {
+                background-color: #9399a6;
+            }
+        }
+
+        @at-root .direction-x#{&} {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+
+            .bar {
+                left: 0;
+                top: 0;
+                height: 100%;
+            }
+        }
+
+        @at-root .direction-y#{&} {
+            right: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+
+            .bar {
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .blocker {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

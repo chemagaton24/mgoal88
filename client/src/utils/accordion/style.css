@@ -1,0 +1,20 @@
+.accordion.accordion-open-style-dropdown > .accordion-wrap {
+  position: relative;
+}
+.accordion.accordion-open-style-dropdown > .accordion-wrap > .accordion-child {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  width: auto;
+  height: 100%;
+}
+.accordion .accordion-wrap.active > .accordion-child {
+  display: block;
+}
+.accordion .accordion-wrap .accordion-parent {
+  cursor: pointer;
+}
+.accordion .accordion-wrap .accordion-child {
+  display: none;
+}

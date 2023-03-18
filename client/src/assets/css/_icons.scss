@@ -1,0 +1,412 @@
+$size-list: (
+	1: 4,
+	8: 8,
+	12: 12,
+	16: 16,
+	18: 18,
+	20: 20,
+	24: 24,
+	32: 32,
+	40: 40,
+	48: 48,
+	56: 56,
+	64: 64,
+	80: 80,
+);
+
+@mixin styles($viewport: null) {
+    $mq: null;
+    @if $viewport != null {
+        $mq: 'mq-'+#{$viewport+'-'};
+    }
+
+	.icon {
+		display: inline-block;
+		vertical-align: middle;
+		width: 24px;
+		height: 24px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left top;
+
+		@each $key,
+		$val in $size-list {
+			&.#{$mq}s-#{$val} {
+				width: #{$val}px;
+				height: #{$val}px;
+			}
+		}
+
+		&.icon-flag {
+			&.en {
+				background-image: url('../images/icons/flags/en.svg');
+			}
+
+			&.cn {
+				background-image: url('../images/icons/flags/cn.svg');
+			}
+
+			&.id {
+				background-image: url('../images/icons/flags/id.svg');
+			}
+
+			&.vn {
+				background-image: url('../images/icons/flags/vn.svg');
+			}
+
+			&.th {
+				background-image: url('../images/icons/flags/th.svg');
+			}
+		}
+
+		&.icon-caret-down {
+			&.white {
+				background-image: url('../images/icons/common/caret-down-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/caret-down-dark.svg');
+			}
+
+			&.fit {
+				background-size: 188% auto;
+				background-position: center center;
+			}
+		}
+
+		&.icon-chat {
+			&.yellow {
+				background-image: url('../images/icons/common/chat-yellow.svg');
+			}
+		}
+
+		&.icon-dollar-flow {
+			&.color-yellow {
+				background-image: url('../images/icons/common/dollar-flow-yellow.svg');
+			}
+		}
+
+		&.icon-timer {
+			&.yellow {
+				background-image: url('../images/icons/common/timer-yellow.svg');
+			}
+		}
+
+		&.icon-play {
+			&.yellow {
+				background-image: url('../images/icons/common/play-yellow.svg');
+			}
+		}
+
+		&.icon-close {
+			&.white {
+				background-image: url('../images/icons/common/close-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/close-dark.svg');
+			}
+		}
+
+		&.icon-home {
+			&.white {
+				background-image: url('../images/icons/common/home-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/home-dark.svg');
+			}
+		}
+
+		&.icon-odds {
+			&.gray-white {
+				background-image: url('../images/icons/common/odds-gray-white.svg');
+			}
+		}
+
+		&.icon-live-events {
+			&.gray-white {
+				background-image: url('../images/icons/common/live-events-gray-white.svg');
+			}
+		}
+
+		&.icon-pile-coins {
+			&.gray-white {
+				background-image: url('../images/icons/common/pile-coins-gray-white.svg');
+			}
+		}
+
+		&.icon-coin-purse {
+			&.dark {
+				background-image: url('../images/icons/common/coin-purse-dark.svg');
+			}
+		}
+
+		&.icon-profile {
+			&.dark {
+				background-image: url('../images/icons/common/profile-dark.svg');
+			}
+		}
+
+		&.icon-file {
+			&.dark {
+				background-image: url('../images/icons/common/file-dark.svg');
+			}
+		}
+
+		&.icon-soccer {
+			&.white {
+				background-image: url('../images/icons/common/soccer-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/soccer-dark.svg');
+			}
+
+			&.gray-white {
+				background-image: url('../images/icons/common/soccer-gray-white.svg');
+			}
+		}
+
+		&.icon-poker-card {
+			&.white {
+				background-image: url('../images/icons/common/poker-card-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/poker-card-dark.svg');
+			}
+
+			&.gray-white {
+				background-image: url('../images/icons/common/poker-card-gray-white.svg');
+			}
+		}
+
+		&.icon-live-chat {
+			&.gray-white {
+				background-image: url('../images/icons/common/live-chat-gray-white.svg');
+			}
+		}
+
+		&.icon-video-camera {
+			&.gray-white {
+				background-image: url('../images/icons/common/video-camera-gray-white.svg');
+			}
+		}
+
+		&.icon-cash {
+			&.gray-white {
+				background-image: url('../images/icons/common/cash-gray-white.svg');
+			}
+		}
+
+		&.icon-casino {
+			&.white {
+				background-image: url('../images/icons/common/casino-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/casino-dark.svg');
+			}
+		}
+
+		&.icon-promotion {
+			&.white {
+				background-image: url('../images/icons/common/promotion-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/promotion-dark.svg');
+			}
+
+			&.gray-white {
+				background-image: url('../images/icons/common/promotion-gray-white.svg');
+			}
+		}
+
+		&.icon-vip {
+			&.white {
+				background-image: url('../images/icons/common/vip-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/vip-dark.svg');
+			}
+		}
+
+		&.icon-vip-blurb {
+			&.security {
+				background-image: url('../images/icons/vip/security.svg');
+			}
+
+			&.priority-process {
+				background-image: url('../images/icons/vip/priority-process.svg');
+			}
+
+			&.exclusive-promo {
+				background-image: url('../images/icons/vip/exclusive-promo.svg');
+			}
+
+			&.dedicated-service {
+				background-image: url('../images/icons/vip/dedicated-service.svg');
+			}
+		}
+
+		&.icon-friend {
+			&.white {
+				background-image: url('../images/icons/common/friend-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/friend-dark.svg');
+			}
+		}
+
+		&.icon-bank {
+			&.white {
+				background-image: url('../images/icons/common/bank-white.svg');
+			}
+		}
+
+		&.icon-about {
+			&.dark {
+				background-image: url('../images/icons/common/about-dark.svg');
+			}
+		}
+
+
+		&.icon-deposit {
+			&.dark {
+				background-image: url('../images/icons/common/deposit-dark.svg');
+			}
+		}
+
+		&.icon-live-casino {
+			&.dark {
+				background-image: url('../images/icons/common/live-casino-dark.svg');
+			}
+		}
+
+		&.icon-all-sports {
+			&.dark {
+				background-image: url('../images/icons/common/all-sports-dark.svg');
+			}
+		}
+
+		&.icon-info {
+			&.white {
+				background-image: url('../images/icons/common/info-white.svg');
+			}
+		}
+
+		&.icon-affiliate {
+			&.white {
+				background-image: url('../images/icons/common/affiliate-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/affiliate-dark.svg');
+			}
+		}
+		
+		&.icon-check {
+			&.green {
+				background-image: url('../images/icons/common/check-green.svg');
+			}
+		}
+
+		&.icon-exclamation-red {
+			background-image: url('../images/icons/common/exclamation-red.svg');
+		}
+
+		&.icon-loud-speaker {
+			&.fit {
+				background-size: 132% auto;
+				background-position: center center;
+			}
+
+			&.white {
+				background-image: url('../images/icons/common/loud-speaker-white.svg');
+			}
+
+			&.dark {
+				background-image: url('../images/icons/common/loud-speaker-dark.svg');
+			}
+		}
+
+		&.icon-triangle {
+			&.red {
+				background-image: url('../images/icons/common/triangle-down-red.svg');
+			}
+
+			&.green {
+				background-image: url('../images/icons/common/triangle-up-green.svg');
+			}
+		}
+
+		&.icon-team {
+			&.arsenal {
+				background-image: url('../images/icons/teams/arsenal.svg');
+			}
+
+			&.manchester-city {
+				background-image: url('../images/icons/teams/manchester-city.svg');
+			}
+		}
+
+		&.icon-casino-provider {
+			&.microgaming {
+				background-image: url('../images/icons/casino/providers/microgaming.svg');
+			}
+
+			&.habanero {
+				background-image: url('../images/icons/casino/providers/habanero.svg');
+			}
+
+			&.isoftbet {
+				background-image: url('../images/icons/casino/providers/isoftbet.svg');
+			}
+
+			&.skywind {
+				background-image: url('../images/icons/casino/providers/skywind.svg');
+			}
+
+			&.cq9 {
+				background-image: url('../images/icons/casino/providers/cq9.svg');
+			}
+		}
+
+		&.icon-vip-emblem {
+			&.bronze {
+				background-image: url('../images/icons/vip/emblem/bronze.png');
+			}
+
+			&.silver {
+				background-image: url('../images/icons/vip/emblem/silver.png');
+			}
+
+			&.gold {
+				background-image: url('../images/icons/vip/emblem/gold.png');
+			}
+
+			&.platinum {
+				background-image: url('../images/icons/vip/emblem/platinum.png');
+			}
+
+			&.diamond {
+				background-image: url('../images/icons/vip/emblem/diamond.png');
+			}
+		}
+	}
+}
+
+@mixin iterateViewport($viewport) {
+    @media only screen and (max-width: #{$viewport+'px'}) {
+        @include styles($viewport);
+    }
+}
+
+@include styles();
+@include iterateViewport(1400);
+@include iterateViewport(1023);
+@include iterateViewport(767);

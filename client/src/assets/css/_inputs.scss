@@ -1,0 +1,50 @@
+input {
+
+    &[type='text'],
+    &[type='password'],
+    &[type='email'] {
+        height: 40px;
+        box-sizing: border-box;
+        border: solid 1px #d4d6db;
+        border-radius: 2px;
+        padding: 0 8px;
+        font-size: 14px;
+        color: #151d2d;
+        outline: 0;
+
+        &::placeholder {
+            color: #9399a6;
+        }
+    }
+}
+
+.input-field {
+    position: relative;
+
+    input {
+
+        &[type='text'],
+        &[type='password'],
+        &[type='email'] {
+            width: 100%;
+        }
+    }
+}
+
+.validation-message {
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 14px;
+
+    &.validation-error {
+        background-color: #eaebee;
+        color: #bf181b;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    &.validation-message-all {
+        background-color: #bf181b;
+    }
+}

@@ -1,0 +1,84 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    height: 40px;
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    outline: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.theme-default {
+        color: #26324d;
+        background-color: #f7d00e;
+
+        &[disabled] {
+            color: #650;
+            background-color: #bb9e0c;
+        }
+    }
+
+    &.theme-transparent-light {
+        border: solid 1px #fff;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    &.theme-transparent-dark {
+        border: solid 1px #26324d;
+        color: #26324d;
+        background-color: transparent;
+    }
+}
+
+@mixin styles($viewport: null) {
+    $mq: null;
+
+    @if $viewport  !=null {
+        $mq: 'mq-'+#{$viewport+'-'};
+    }
+
+    .btn {
+        &.#{$mq}h-24 {
+            height: 24px;
+            font-size: 12px;
+        }
+
+        &.#{$mq}h-30 {
+            height: 30px;
+            font-size: 14px;
+        }
+
+        &.#{$mq}h-32 {
+            height: 32px;
+            font-size: 14px;
+        }
+
+        &.#{$mq}h-40 {
+            height: 40px;
+        }
+
+        &.#{$mq}h-48 {
+            height: 48px;
+        }
+    }
+}
+
+@mixin iterateViewport($viewport) {
+    @media only screen and (max-width: #{$viewport+'px'}) {
+        @include styles($viewport);
+    }
+}
+
+@include styles();
+@include iterateViewport(1400);
+@include iterateViewport(1023);
+@include iterateViewport(767);

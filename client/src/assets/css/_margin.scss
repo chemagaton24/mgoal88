@@ -1,0 +1,56 @@
+$size-list: (
+    4: 4,
+    6: 6,
+    8: 8,
+    12: 12,
+    14: 14,
+    16: 16,
+    18: 18,
+    20: 20,
+    24: 24,
+    32: 32,
+    38: 38,
+    40: 40,
+    48: 48,
+    56: 56,
+);
+
+@mixin styles($viewport: null) {
+    $mq: null;
+    @if $viewport != null {
+        $mq: 'mq-'+#{$viewport+'-'};
+    }
+
+    .#{$mq}m-r-unset {
+        margin-right: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .#{$mq}m-r-#{$val} {
+            margin-right: #{$val}px;
+        }
+    }
+
+    .#{$mq}m-b-unset {
+        margin-bottom: unset;
+    }
+
+    @each $key,
+    $val in $size-list {
+        .#{$mq}m-b-#{$val} {
+            margin-bottom: #{$val}px;
+        }
+    }
+}
+
+@mixin iterateViewport($viewport) {
+    @media only screen and (max-width: #{$viewport+'px'}) {
+        @include styles($viewport);
+    }
+}
+
+@include styles();
+@include iterateViewport(1400);
+@include iterateViewport(1023);
+@include iterateViewport(767);

@@ -1,0 +1,66 @@
+.module-form-register form .row-field > .col-1,
+.module-form-register form .row-error > .col-1 {
+  flex-grow: 1;
+  width: 175px;
+  white-space: nowrap;
+}
+.module-form-register form .row-field > .col-2,
+.module-form-register form .row-error > .col-2 {
+  flex-shrink: 1;
+}
+.module-form-register form p {
+  margin: 0;
+}
+.module-form-register form label {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 700;
+}
+.module-form-register form .blue-note {
+  background: rgb(38, 50, 77);
+  background: linear-gradient(to right, rgb(38, 50, 77) 0%, rgb(21, 29, 45) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26324d", endColorstr="#151d2d", GradientType=1);
+  padding: 6px 8px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+.module-form-register form .blue-note .text-1 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.module-form-register form .blue-note .text-2 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.module-form-register form .text-terms-policy {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+.module-form-register form .btn[type=submit] {
+  max-width: 288px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .module-form-register form .row-field > .col-1,
+.module-form-register form .row-error > .col-1 {
+    width: unset;
+  }
+  .module-form-register form .blue-note {
+    padding: 12px;
+  }
+  .module-form-register form .blue-note .text-1 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .module-form-register form .text-terms-policy {
+    text-align: left;
+  }
+  .module-form-register form .btn[type=submit] {
+    max-width: unset;
+    width: 100%;
+  }
+}

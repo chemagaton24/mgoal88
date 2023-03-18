@@ -1,0 +1,23 @@
+.module-playnow-boxed {
+    position: relative;
+    width: 676px;
+    height: 518px;
+    padding-top: 94px;
+
+    .cover {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        width: 676px;
+        height: 612px;
+        margin-top: -94px;
+    }
+
+    .btn {
+        position: absolute;
+        left: 50%;
+        bottom: 32px;
+        transform: translateX(-50%);
+        width: 338px;
+    }
+}
